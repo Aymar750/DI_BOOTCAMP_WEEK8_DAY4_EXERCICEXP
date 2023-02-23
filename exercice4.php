@@ -6,7 +6,7 @@
     $dbuser = 'postgres';
     $dbpassword = 12136270;
 
-    $dbconn = pg_connect("host=$dbhost port=$dbport dbname=$dbname user=$dbuser password=$dbpassword");
+    $dbconn = pg_connect("host=$dbhost port=$dbport dbname=$dbname user=$dbuser password=$dbpassword" ); 
 
     if (!$dbconn) {
         echo "Could not connect to database.\n";
